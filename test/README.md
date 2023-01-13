@@ -12,6 +12,7 @@ testScripts  | This folder contains test scripts to execute full and impact buil
 The main script for testing applications against zAppBuild is `test.groovy`. It takes most of its input from the command line to run full and impact builds. `test.groovy` once executed from the command line calls [fullBuild.groovy](/test/testScripts/fullBuild.groovy) and [impactBuild.groovy](/test/testScripts/impactBuild.groovy) scripts to perform an end to end test on the given feature branch with the program specified for impact build. 
 
 test.groovy script has five required arguments that must be present during each invocation:
+
 * --branch <arg> - zAppBuild branch to test
 * --app <arg> - Application that is being tested (example: MortgageApplication)
 * --url <arg> - DBB Web Application server URL
@@ -19,6 +20,7 @@ test.groovy script has five required arguments that must be present during each 
 * --id <arg> - DBB Web Application user id
 
 test.groovy script has three optional argument that can be present during each invocation
+
 * --pw <arg> - DBB Web Application user password
 * --pwFile <arg> - DBB Web Application user password file
 * --verbose <arg> - Flag indicating to print trace statements
