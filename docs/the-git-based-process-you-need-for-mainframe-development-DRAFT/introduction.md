@@ -114,7 +114,7 @@ large and busier teams with many concurrent projects and projects spanning multi
 ```
 And then, of course, you can build it up incrementally too...
 
-- Everything starts with a branch:
+### Everything starts with a branch:
   
 ```mermaid
 %%{init: { 'fontFamily': 'IBM Plex Sans', 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': true, 'showCommitLabel':true,'mainBranchOrder': 4}} }%%
@@ -124,7 +124,7 @@ And then, of course, you can build it up incrementally too...
       branch feature-001 order: 5
       commit
 ```
-- When on a branch, developers commit changes in isolation:
+### When on a branch, developers commit changes in isolation:
   
 ```mermaid
 %%{init: { 'fontFamily': 'IBM Plex Sans', 'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': true, 'showCommitLabel':true,'mainBranchOrder': 4}} }%%
@@ -136,7 +136,7 @@ And then, of course, you can build it up incrementally too...
       commit
 ```
 - Every branch can be built and tested.
-- When ready, the feature branch can be reviewed and approved to merge into `main`:
+### When ready, the feature branch can be reviewed and approved to merge into `main`:
 ```mermaid
 %%{init: { 'fontFamily': 'IBM Plex Sans',
            'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': true, 'showCommitLabel':true,'mainBranchOrder': 4}} }%%
@@ -149,7 +149,7 @@ And then, of course, you can build it up incrementally too...
       checkout main
       merge feature-001
 ```
-- Multiple features can be developed concurrently:
+### Multiple features can be developed concurrently:
 ```mermaid
 %%{init: { 'fontFamily': 'IBM Plex Sans',
            'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': true, 'showCommitLabel':true,'mainBranchOrder': 4}} }%%
@@ -169,7 +169,7 @@ And then, of course, you can build it up incrementally too...
       checkout main
       merge feature-002
 ```
-- or serially:
+### or serially:
 ```mermaid
 %%{init: { 'fontFamily': 'IBM Plex Sans',
            'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': true, 'showCommitLabel':true,'mainBranchOrder': 4}} }%%
@@ -194,7 +194,7 @@ And then, of course, you can build it up incrementally too...
       checkout main
       merge feature-002
 ```
-- And then a release candidate can be created:
+### And then a release candidate can be created:
 ```mermaid
 %%{init: { 'fontFamily': 'IBM Plex Sans',
            'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': true, 'showCommitLabel':true,'mainBranchOrder': 4}} }%%
@@ -209,7 +209,7 @@ And then, of course, you can build it up incrementally too...
  ```
  *(note: commits to `main` here are, of course, merges of approved branches)*
 
- - Fixes are handled as branches from `main`, which are tested, approved, merged to `main` and *cherry-picked* to add to the release branch:
+### Fixes are handled as branches from `main`, which are tested, approved, merged to `main` and *cherry-picked* to add to the release branch:
 ~~~mermaid
 %%{init: { 'fontFamily': 'IBM Plex Sans',
            'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': true, 'showCommitLabel':true,'mainBranchOrder': 4}} }%%
@@ -229,7 +229,7 @@ And then, of course, you can build it up incrementally too...
       checkout main
       commit
 ~~~
-- Features can run over release boundaries:
+### Features can run over release boundaries:
 ```mermaid
 %%{init: { 'fontFamily': 'IBM Plex Sans',
            'logLevel': 'debug', 'theme': 'base', 'gitGraph': {'showBranches': true, 'showCommitLabel':true,'mainBranchOrder': 4}} }%%
